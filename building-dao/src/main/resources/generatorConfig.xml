@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<!-- 配置mysql jar包绝对路径 -->
+	<classPathEntry
+		location="D:\runtime\repository\mysql\mysql-connector-java\5.1.43\mysql-connector-java-5.1.43.jar" />
+	<context id="context1">
+		<property name="javaFileEncoding" value="UTF-8"/>
+
+		<!-- 引入插件 -->
+		<commentGenerator type="com.building.dao.plugin.MyCommentGenerator" />
+
+		<!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+		<!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+		<!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+
+		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+		<jdbcConnection
+				connectionURL="jdbc:mysql://106.14.244.211:3306/building_site?characterEncoding=UTF-8"
+				driverClass="com.mysql.jdbc.Driver" password="LingBian###123" userId="building_site">
+			<property name="remarks" value="true" />
+			<property name="useInformationSchema" value="true" />
+		</jdbcConnection>
+		<!-- model存放目录 -->
+		<javaModelGenerator targetPackage="com.building.dao.entity" targetProject="D:\workspace-center\buildingSite-workspace\buildingSite\building-dao\src\main\java" >
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- mapper xml存放目录 -->
+		<sqlMapGenerator targetPackage="mapper" targetProject="D:\workspace-center\buildingSite-workspace\buildingSite\building-dao\src\main\resources" />
+		<!-- 生成DAO的类文件以及配置文件 -->
+		<javaClientGenerator targetPackage="com.building.dao.mapper" targetProject="D:\workspace-center\buildingSite-workspace\buildingSite\building-dao\src\main\java" type="XMLMAPPER" />
+		<!-- 配置完成后请使用 MybatisGeneratorMain.java 执行main方法生成代码 执行完成后不要提交这个文件 -->
+		<!--模型表-->
+<!--		<table tableName="t_craft_data" domainObjectName="CraftDataEntity"-->
+<!--			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"-->
+<!--			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"-->
+<!--			   enableUpdateByExample="false" enableCountByExample="false">-->
+<!--		</table>-->
+		<table tableName="login_log" domainObjectName="LoginLogDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_alarms" domainObjectName="AlarmsDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_devices" domainObjectName="DevicesDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_dictionary" domainObjectName="DictionaryDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_hanging_baskets" domainObjectName="HangingBasketsDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_project" domainObjectName="ProjectDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_region" domainObjectName="RegionDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_role" domainObjectName="RoleDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_user" domainObjectName="UserDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_user_role" domainObjectName="UserRoleDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+		<table tableName="t_zone" domainObjectName="ZoneDO"
+			   enableInsert="true" enableDeleteByPrimaryKey="true" enableSelectByPrimaryKey="true"
+			   enableUpdateByPrimaryKey="true" enableSelectByExample="true" enableDeleteByExample="false"
+			   enableUpdateByExample="false" enableCountByExample="false">
+		</table>
+
+			</context>
+        </generatorConfiguration>

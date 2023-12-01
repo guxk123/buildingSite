@@ -1,0 +1,3 @@
+# Project exclude paths
+/building-common/target/
+/building-dao/target/
